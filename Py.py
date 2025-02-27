@@ -15,7 +15,7 @@ def find_parquet_files(url):
         return []
 
 def download_yellow_tripdata_files(file_urls, download_dir):
-    yellow_tripdata_urls = [url for url in file_urls if "yellow_tripdata" in url]
+    yellow_tripdata_urls = [url for url in file_urls if "yellow_tripdata_2024" in url]
     for url in yellow_tripdata_urls:
         file_name = url.split('/')[-1]
         response = requests.get(url)
